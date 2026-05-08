@@ -24,7 +24,7 @@ It combines data cleaning, querying, visualization, KPI analysis, and dashboard 
 | ------------------------------- | -------------------------------------------------------------------------- |
 | `Pizza sales analysis.ipynb`    | Python analysis and data exploration using Pandas, Matplotlib, and Seaborn |
 | `pizza sales excel.xlsx`        | Raw dataset used for analysis                                              |
-| `PIZZAdb_SQL_finalProject.docx` | SQL queries for KPI analysis and business questions                        |
+| `pizza_db sql.sql` | SQL queries for KPI analysis and business questions                        |
 | `PIZZADB_finalproject.pbix`     | Interactive Power BI dashboard                                             |
 | `Pizza salesss.twbx`            | Tableau dashboard and visual analytics                                     |
 
