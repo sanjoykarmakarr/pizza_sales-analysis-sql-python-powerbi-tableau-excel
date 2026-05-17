@@ -1,4 +1,4 @@
-# 🍕 Pizza Sales End-to-End Data Analytics Project
+# Pizza Sales Analysis — SQL · Python · Power BI · Tableau
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-2019+-red.svg)
@@ -7,56 +7,18 @@
 
 ---
 
-## 📌 Project Overview
-
-This project presents a complete **end-to-end data analytics workflow** on pizza sales data, transforming raw transactional records into meaningful business insights using **Python, SQL Server, Excel, Power BI, and Tableau**.
-
-The objective is to analyze sales performance, customer ordering behavior, and product trends to support data-driven business decisions for a pizza restaurant.
+A full analytics project on pizza restaurant sales data — from raw Excel records to interactive dashboards. The goal was simple: figure out what's selling, when people are ordering, and where the business can actually improve.
 
 ---
 
-## 🎯 Business Objectives
+## What's Inside
 
-- Identify total revenue and sales performance
-- Analyze customer ordering patterns
-- Discover best-selling and low-performing pizzas
-- Evaluate category and size-wise performance
-- Understand peak sales hours and seasonal trends
-- Provide actionable business recommendations
-
----
-
-## 🛠️ Tech Stack
-
-### Programming & Analysis
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-
-### Database
-- Microsoft SQL Server
-- SQL Queries
-- Window Functions
-- Aggregations
-
-### Visualization
-- Power BI
-- Tableau
-- Microsoft Excel
-
----
-
-## 📂 Repository Structure
-
-```bash
+```
 pizza_sales-analysis-sql-python-powerbi-tableau-excel/
 │
-├── Pizza sales analysis (1).ipynb     # Python data cleaning + EDA
-├── pizza_db sql.sql                   # SQL KPI queries
-├── pizza sales excel.xlsx             # Raw dataset
+├── Pizza sales analysis (1).ipynb     # Cleaning + EDA in Python
+├── pizza_db sql.sql                   # All SQL queries used
+├── pizza sales excel.xlsx             # Source dataset
 ├── PIZZADB_finalproject.pbix          # Power BI dashboard
 ├── Pizza salesss.twbx                 # Tableau dashboard
 └── README.md
@@ -64,138 +26,92 @@ pizza_sales-analysis-sql-python-powerbi-tableau-excel/
 
 ---
 
-## 📊 Key Insights
+## The Numbers (KPIs)
 
-### Revenue & Order Metrics
-
-| KPI | Value |
-|-----|-------|
-| **Total Revenue** | **$817,860.05** |
-| **Total Orders** | **21,350** |
-| **Total Pizzas Sold** | **49,574** |
-| **Average Order Value** | **$38.31** |
-| **Average Pizzas per Order** | **2.32** |
+| Metric | Value |
+|--------|-------|
+| Total Revenue | $817,860.05 |
+| Total Orders | 21,350 |
+| Total Pizzas Sold | 49,574 |
+| Average Order Value | $38.31 |
+| Avg Pizzas per Order | 2.32 |
 
 ---
 
-### Sales Trends
+## Key Findings
 
-✅ **Peak Order Days:** Friday & Saturday  
-✅ **Peak Hours:** 12 PM–2 PM and 6 PM–9 PM  
-✅ **Best Performing Size:** Large  
-✅ **Most Ordered Size:** Medium  
-
----
-
-### Top Performing Pizzas
-
-- Thai Chicken Pizza
-- Barbecue Chicken Pizza
-- California Chicken Pizza
-- Classic Deluxe Pizza
-- Spicy Italian Pizza
+- **Fridays and Saturdays** drive the most orders — weekday traffic drops significantly
+- **Lunch (12–2 PM) and dinner (6–9 PM)** are the two clear peak windows
+- **Large size** generates the most revenue; Medium is ordered most frequently
+- **Thai Chicken Pizza** is the top revenue contributor — nearly consistent across months
+- The bottom 5 pizzas account for a disproportionately small share of sales, yet take up inventory space
 
 ---
 
-## 📈 Analysis Workflow
+## How the Analysis Was Done
 
-### 1. Data Cleaning (Python)
-- Removed duplicates
-- Checked missing values
-- Converted date/time columns
-- Created additional time-based features
+### Python — Cleaning & EDA
+Loaded the raw Excel file, handled duplicates, fixed date/time formats, and engineered time-based columns (hour, day of week, month). Ran distribution analysis across categories, sizes, and time periods using Matplotlib and Seaborn.
 
-### 2. Exploratory Data Analysis
-- Revenue analysis
-- Sales trend analysis
-- Product performance analysis
-- Category and size distribution
+### SQL — KPI Extraction
+Wrote queries against SQL Server to calculate revenue metrics, daily/monthly trends, and pizza rankings. Used window functions (`RANK()`, `DENSE_RANK()`) to identify top and bottom performers by revenue and quantity.
 
-### 3. SQL KPI Extraction
-- Revenue calculations
-- Daily and monthly trends
-- Ranking top/bottom pizzas
-- Category-wise comparisons
+Example query — Top 5 pizzas by revenue:
+```sql
+SELECT TOP 5
+    pizza_name,
+    ROUND(SUM(total_price), 2) AS total_revenue
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY total_revenue DESC;
+```
 
-### 4. Dashboard Development
-Interactive dashboards built in:
-- Power BI
-- Tableau
+### Dashboards
+Built two separate dashboards with the same underlying data to cross-validate insights and practice both tools.
 
----
-
-## 📸 Dashboard Preview
-
-### Power BI Dashboard
+**Power BI**
 ![Power BI Dashboard](pbihome.png)
 
-### Tableau Dashboard
+**Tableau**
 ![Tableau Dashboard](tbluhome.png)
 
 ---
 
-## 💡 Business Recommendations
+## What I'd Actually Recommend (Based on the Data)
 
-### 1. Promote High-Selling Pizzas
-Focus marketing on top-performing pizzas to maximize revenue.
-
-### 2. Optimize Inventory
-Reduce stock for low-demand items and improve supply planning.
-
-### 3. Improve Staff Scheduling
-Increase staffing during peak lunch and evening hours.
-
-### 4. Bundle Offers
-Create combo deals to increase average order value.
+1. **Push Thai Chicken and BBQ Chicken harder on weekends** — they already sell well, weekend promotions could amplify that without much risk
+2. **Cut or rotate the bottom 5 pizzas** — they're not pulling weight and are probably adding complexity to prep
+3. **Staff up between 12–2 PM and 6–9 PM** — the drop-off outside these windows is sharp enough that off-peak labor can be reduced
+4. **Bundle Medium + drink deals** — Medium is the most ordered size but not the highest revenue; a combo could lift average order value
 
 ---
 
-## 🚀 How to Run This Project
+## Dataset
 
-### Clone Repository
+Source: [Pizza Sales Dataset — Kaggle](https://www.kaggle.com/) *(update this link with the exact source if different)*
+
+---
+
+## Running It Locally
 
 ```bash
 git clone https://github.com/sanjoykarmakarr/pizza_sales-analysis-sql-python-powerbi-tableau-excel.git
 cd pizza_sales-analysis-sql-python-powerbi-tableau-excel
-```
 
-### Install Dependencies
-
-```bash
 pip install pandas numpy matplotlib seaborn jupyter
-```
-
-### Open Notebook
-
-```bash
 jupyter notebook "Pizza sales analysis (1).ipynb"
 ```
 
-### Open Dashboards
-
-- **Power BI** → `PIZZADB_finalproject.pbix`
-- **Tableau** → `Pizza salesss.twbx`
+- Power BI → open `PIZZADB_finalproject.pbix` in Power BI Desktop
+- Tableau → open `Pizza salesss.twbx` in Tableau Public/Desktop
 
 ---
 
-## 📚 Skills Demonstrated
+## Skills Covered
 
-- Data Cleaning
-- Exploratory Data Analysis
-- SQL Query Writing
-- KPI Development
-- Dashboard Design
-- Business Insight Generation
-- Data Storytelling
+Data cleaning · Exploratory data analysis · SQL (aggregations, window functions) · KPI design · Power BI · Tableau · Business insight communication
 
 ---
-
-## 📬 Contact
 
 **Sanjoy Karmakar**  
-📧 **Email:** androsanjoy@gmail.com  
-🔗 **LinkedIn:** https://www.linkedin.com/in/sanjoy-karmakar-733a3925b/
-
----
-
-⭐ If you found this project useful, feel free to **star this repository**.
+androsanjoy@gmail.com · [LinkedIn](https://www.linkedin.com/in/sanjoy-karmakar-733a3925b/)
