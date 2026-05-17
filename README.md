@@ -88,7 +88,7 @@ Built two separate dashboards with the same underlying data to cross-validate in
 
 ## Dataset
 
-Source: [Pizza Sales Dataset — Kaggle](https://www.kaggle.com/) *(update this link with the exact source if different)*
+Source: [Pizza Sales Dataset — Kaggle](https://www.kaggle.com/datasets/sanjoykarmakarr/pizza-sales)
 
 ---
 
