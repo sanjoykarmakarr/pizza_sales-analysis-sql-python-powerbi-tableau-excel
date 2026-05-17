@@ -1,189 +1,200 @@
-# 🍕 Pizza Sales Analysis | End-to-End Data Analytics Project
+# 🍕 Pizza Sales End-to-End Data Analytics Project
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-2019+-red.svg)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow.svg)
+![Tableau](https://img.shields.io/badge/Tableau-Visualization-orange.svg)
 
 ## 📌 Project Overview
 
-This project is a complete end-to-end data analysis case study built on a pizza sales dataset. The goal of the project was to transform raw sales data into meaningful business insights using multiple analytics tools and technologies.
+This project presents a complete **end-to-end data analytics workflow** on pizza sales data, transforming raw transactional records into meaningful business insights using **Python, SQL Server, Excel, Power BI, and Tableau**.
 
-The analysis focuses on identifying customer ordering behavior, sales performance, top-selling products, revenue trends, and operational insights that can help improve decision-making in a restaurant or food retail business.
-
-This project was completed using:
-
-* Python
-* SQL Server
-* Excel
-* Power BI
-* Tableau
-
-It combines data cleaning, querying, visualization, KPI analysis, and dashboard development to simulate a real-world business intelligence workflow.
+The objective is to analyze sales performance, customer ordering behavior, and product trends to support data-driven business decisions for a pizza restaurant.
 
 ---
 
-# 📂 Project Files
+## 🎯 Business Objectives
 
-| File Name                       | Description                                                                |
-| ------------------------------- | -------------------------------------------------------------------------- |
-| `Pizza sales analysis.ipynb`    | Python analysis and data exploration using Pandas, Matplotlib, and Seaborn |
-| `pizza sales excel.xlsx`        | Raw dataset used for analysis                                              |
-| `pizza_db sql.sql` | SQL queries for KPI analysis and business questions                        |
-| `PIZZADB_finalproject.pbix`     | Interactive Power BI dashboard                                             |
-| `Pizza salesss.twbx`            | Tableau dashboard and visual analytics                                     |
-
----
-
-# 🎯 Business Problem
-
-The objective of this project was to analyze pizza sales data and answer key business questions such as:
-
-* What is the total revenue generated?
-* How many pizzas were sold in total?
-* Which pizza categories and sizes perform best?
-* What are the peak sales days and hours?
-* Which pizzas are top-performing and underperforming?
-* What are the monthly and daily sales trends?
-* What is the average order value and average pizzas per order?
+- Identify total revenue and sales performance
+- Analyze customer ordering patterns
+- Discover best-selling and low-performing pizzas
+- Evaluate category and size-wise performance
+- Understand peak sales hours and seasonal trends
+- Provide actionable business recommendations
 
 ---
 
-# 🛠️ Tools & Technologies Used
+## 🛠️ Tech Stack
 
-## 🐍 Python
+### Programming & Analysis
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Jupyter Notebook
+### Database
+- Microsoft SQL Server
+- SQL Queries
+- Window Functions
+- Aggregations
 
-## 🗄️ SQL Server
-
-* Aggregate Functions
-* GROUP BY
-* DATEPART & DATENAME
-* CAST Function
-* KPI Calculations
-
-## 📊 Power BI
-
-* Interactive Dashboard
-* KPI Cards
-* Sales Trend Analysis
-* Product Performance Visualization
-
-## 📈 Tableau
-
-* Dynamic Dashboards
-* Sales & Revenue Visualization
-* Trend Analysis
-* Business Storytelling
-
-## 📑 Excel
-
-* Data Storage
-* Initial Data Review
-* Data Validation
+### Visualization
+- Power BI
+- Tableau
+- Microsoft Excel
 
 ---
 
-# 📊 Key KPIs Analyzed
+## 📂 Repository Structure
 
-| KPI                      | Result      |
-| ------------------------ | ----------- |
-| Total Revenue            | ₹817,860.05 |
-| Total Orders             | 48,620      |
-| Total Pizzas Sold        | 49,574      |
-| Average Order Value      | ₹38.31      |
-| Average Pizzas Per Order | 2.32        |
-
----
-
-# 📈 Analysis Performed
-
-## 🔹 Sales Trend Analysis
-
-* Daily order trends
-* Monthly sales trends
-* Hourly sales patterns
-* Peak ordering periods
-
-## 🔹 Product Performance Analysis
-
-* Top 5 pizzas by revenue
-* Top 5 pizzas by quantity sold
-* Bottom-performing pizzas
-* Best-selling pizza categories
-* Best-selling pizza sizes
-
-## 🔹 Revenue Analysis
-
-* Revenue contribution by category
-* Revenue contribution by pizza size
-* Order distribution insights
+```bash
+pizza_sales-analysis-sql-python-powerbi-tableau-excel/
+│
+├── Pizza sales analysis (1).ipynb     # Python data cleaning + EDA
+├── pizza_db sql.sql                   # SQL KPI queries
+├── pizza sales excel.xlsx             # Raw dataset
+├── PIZZADB_finalproject.pbix          # Power BI dashboard
+├── Pizza salesss.twbx                 # Tableau dashboard
+└── README.md
+```
 
 ---
 
-# 📌 Key Insights
+## 📊 Key Insights
 
-* Weekends generated the highest number of orders, especially Fridays and Saturdays.
-* Large-sized pizzas contributed the highest share of revenue.
-* Classic category pizzas performed consistently well across overall sales.
-* Sales peaked during lunch and evening hours.
-* A small group of pizza varieties contributed significantly to overall revenue.
-* Some pizzas had high order frequency but lower revenue contribution, showing different customer purchasing behavior.
+### Revenue & Order Metrics
 
----
-
-# 📷 Dashboard Highlights
-
-The dashboards were designed to provide quick business insights through interactive visualizations.
-
-### Power BI Dashboard Includes:
-
-* KPI Summary Cards
-* Revenue Trends
-* Hourly & Daily Sales Analysis
-* Top/Bottom Product Performance
-* Sales Distribution by Category & Size
-
-### Tableau Dashboard Includes:
-
-* Interactive Filtering
-* Monthly Sales Trend
-* Revenue Comparison
-* Product-Level Performance Analysis
-* Business-Focused Visual Storytelling
+| KPI | Value |
+|-----|-------|
+| **Total Revenue** | **$817,860.05** |
+| **Total Orders** | **21,350** |
+| **Total Pizzas Sold** | **49,574** |
+| **Average Order Value** | **$38.31** |
+| **Average Pizzas per Order** | **2.32** |
 
 ---
 
-# 🧠 Skills Demonstrated
+### Sales Trends
 
-* Data Cleaning & Preparation
-* Exploratory Data Analysis (EDA)
-* SQL Query Writing
-* KPI Calculation
-* Dashboard Design
-* Data Visualization
-* Business Insight Generation
-* Analytical Thinking
-* Storytelling with Data
+✅ **Peak Order Days:** Friday & Saturday  
+✅ **Peak Hours:** 12 PM–2 PM and 6 PM–9 PM  
+✅ **Best Performing Size:** Large  
+✅ **Most Ordered Size:** Medium  
 
 ---
 
-# 🚀 Project Outcome
+### Top Performing Pizzas
 
-This project helped strengthen my understanding of real-world business analytics workflows by combining multiple tools into a single analytical pipeline.
-
-It demonstrates the ability to:
-
-* Work with raw transactional data
-* Perform business-focused analysis
-* Build dashboards for stakeholders
-* Extract actionable insights from data
-* Present findings in a clear and visual format
+- Thai Chicken Pizza
+- Barbecue Chicken Pizza
+- California Chicken Pizza
+- Classic Deluxe Pizza
+- Spicy Italian Pizza
 
 ---
 
-# 📬 Connect With Me
+## 📈 Analysis Workflow
 
-If you liked this project or have any suggestions, feel free to connect or provide feedback.
+### 1. Data Cleaning (Python)
+- Removed duplicates
+- Checked missing values
+- Converted date/time columns
+- Created additional time-based features
 
-⭐ If you found this project useful, consider giving it a star.
+### 2. Exploratory Data Analysis
+- Revenue analysis
+- Sales trend analysis
+- Product performance analysis
+- Category and size distribution
+
+### 3. SQL KPI Extraction
+- Revenue calculations
+- Daily and monthly trends
+- Ranking top/bottom pizzas
+- Category-wise comparisons
+
+### 4. Dashboard Development
+Interactive dashboards built in:
+
+- **Power BI**
+- **Tableau**
+
+---
+
+## 📸 Dashboard Preview
+
+### Power BI Dashboard
+![Power BI Dashboard](assets/screenshots/powerbi_overview.png)
+
+### Tableau Dashboard
+![Tableau Dashboard](assets/screenshots/tableau_trends.png)
+
+---
+
+## 💡 Business Recommendations
+
+### 1. Promote High-Selling Pizzas
+Focus marketing on top-performing pizzas to maximize revenue.
+
+### 2. Optimize Inventory
+Reduce stock for low-demand items and improve supply planning.
+
+### 3. Improve Staff Scheduling
+Increase staffing during peak lunch and evening hours.
+
+### 4. Bundle Offers
+Create combo deals to increase average order value.
+
+---
+
+## 🚀 How to Run This Project
+
+### Clone Repository
+
+```bash
+git clone https://github.com/sanjoykarmakarr/pizza_sales-analysis-sql-python-powerbi-tableau-excel.git
+cd pizza_sales-analysis-sql-python-powerbi-tableau-excel
+```
+
+### Install Dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn jupyter
+```
+
+### Open Notebook
+
+```bash
+jupyter notebook "Pizza sales analysis (1).ipynb"
+```
+
+### Open Dashboards
+
+- Power BI → `PIZZADB_finalproject.pbix`
+- Tableau → `Pizza salesss.twbx`
+
+---
+
+## 📚 Skills Demonstrated
+
+- Data Cleaning
+- Exploratory Data Analysis
+- SQL Query Writing
+- KPI Development
+- Dashboard Design
+- Business Insight Generation
+- Data Storytelling
+
+---
+
+## 📬 Contact
+
+**Sanjoy Karmakar**  
+📧 Email: androsanjoy@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/sanjoy-karmakar-733a3925b/
+
+---
+
+⭐ If you found this project useful, feel free to star this repository.
