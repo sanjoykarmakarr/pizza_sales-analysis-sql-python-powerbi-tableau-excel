@@ -127,10 +127,10 @@ Interactive dashboards built in:
 ## 📸 Dashboard Preview
 
 ### Power BI Dashboard
-![Power BI Dashboard](assets/screenshots/powerbi_overview.png)
+![Power BI Dashboard](pbihome.png)
 
 ### Tableau Dashboard
-![Tableau Dashboard](assets/screenshots/tableau_trends.png)
+![Tableau Dashboard](tbluhome.png)
 
 ---
 
